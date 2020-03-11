@@ -1,8 +1,8 @@
-package ru.linar.rest.services;
+package ru.linar.dz3.services;
 
 
-import ru.linar.rest.dto.UserRegDto;
-import ru.linar.rest.model.User;
+import ru.linar.dz3.dto.UserRegDto;
+import ru.linar.dz3.models.User;
 
 import java.util.List;
 

@@ -1,17 +1,18 @@
-package ru.linar.rest.services;
+package ru.linar.dz3.services;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.linar.rest.dto.UserRegDto;
-import ru.linar.rest.model.User;
-import ru.linar.rest.repositories.UsersRepository;
+import ru.linar.dz3.dto.UserRegDto;
+import ru.linar.dz3.models.User;
+import ru.linar.dz3.repositories.UserRepository;
 
 import java.util.List;
 
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
-    private UsersRepository repository;
+    private UserRepository repository;
 
     @Override
     public User signUp(UserRegDto form) {
@@ -27,7 +28,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUser(Long userID) {
-        return repository.getOne(userID);
+        return repository.getById(userID);
     }
 
     @Override

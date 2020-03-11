@@ -1,10 +1,10 @@
-package ru.linar.rest.dto;
+package ru.linar.dz3.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ru.linar.rest.model.User;
+import ru.linar.dz3.models.User;
 
 @Data
 @AllArgsConstructor

@@ -1,0 +1,20 @@
+GET localhost/rest/users
+
+###
+
+GET localhost/rest/users/2
+
+###
+
+POST http://localhost/rest/users
+Content-Type: application/json
+{
+  "email":"linar2401@gmail.com",
+  "password":"qwerty077",
+  "passwordRepeat":"qwerty077",
+  "country":"NightCity",
+  "gender":true,
+  "agreement":true
+}
+
+###

@@ -1,16 +1,17 @@
-package ru.linar.rest.dto;
+package ru.linar.dz3.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ru.linar.rest.annotations.FieldMatch;
+import ru.linar.dz3.utils.FieldMatch;
 
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
+import java.time.LocalDateTime;
 import java.util.Calendar;
 
 @Data
@@ -35,7 +36,4 @@ public class UserRegDto {
     @NotNull
     @AssertTrue(message = "Вы не согласились с условиями соглашения")
     private boolean agreement;
-    @NotNull
-    @Temporal(TemporalType.TIMESTAMP)
-    private Calendar birthday;
 }
